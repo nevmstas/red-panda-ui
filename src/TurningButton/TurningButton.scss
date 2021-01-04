@@ -1,0 +1,13 @@
+.turning-button{
+    background-color: hotpink;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 3px;
+    transition: all .2s;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        background-color:#ff3399;
+        transform: scale(1.1) rotate(5deg);
+    }
+}
