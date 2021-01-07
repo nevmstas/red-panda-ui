@@ -1,13 +1,45 @@
 .turning-button{
     background-color: hotpink;
     color: white;
-    padding: 10px 5px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 8px;
     transition: all .2s;
     border: none;
-    &:hover{
+    &:hover:enabled{
         cursor: pointer;
         background-color:#ff3399;
-        transform: scale(1.1) rotate(5deg);
+        transform: scale(1.1);
+    };
+
+    &:disabled {
+        background-color: #d9d9d9;
+        color: #595959;
+        cursor: pointer;
     }
+    
+    &.turning-button-left:hover:enabled{
+        transform: rotate(-5deg);
+    }
+
+    &.turning-button-right:hover:enabled{
+        transform: rotate(5deg);
+    }
+}
+
+.small{
+    min-width: 60px;
+    height: 30px;
+    font-size: 12px;
+}
+
+.medium{
+    min-width: 80px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.large{
+    min-width: 100px;
+    height: 45px;
+    font-size: 16px;
 }

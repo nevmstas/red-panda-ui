@@ -1,3 +1,4 @@
-export interface PropsType {
-    label: string;
+import { ButtonPropsType } from '../Types/CommonTypes';
+export interface PropsType extends ButtonPropsType {
+    incline: 'right' | 'left';
 }
